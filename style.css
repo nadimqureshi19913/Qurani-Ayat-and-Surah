@@ -1,0 +1,169 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+   
+}
+
+
+#main
+{
+    height: 85%;
+    width: 100%;
+    background-color:#111;
+    padding: 5vw 5vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#left
+{
+    height: 100%;
+    width:45%;
+    background-image: url('photo-1587617425953-9075d28b8c46.avif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+#right
+{
+    height: 100%;
+    width:55%;
+   /* border: 2px solid white; */
+   padding: 0 3vw;
+  
+}
+
+#right h3
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom:.5px solid #5a5a5a; ;
+}
+
+#all-AyatsSurat
+{
+    height: 85%;
+    overflow: scroll;
+    padding: 10px;
+}
+.surah-card
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: .5px solid #5a5a5a;
+    padding: 15px 10px;
+
+}
+
+
+
+.surah-card:hover
+{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.surah-card:nth-last-child(1)
+{
+    border-bottom: .5px solid #5a5a5a;
+    
+}
+
+.surah-card .part1
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    pointer-events: none;
+}
+
+.surah-card img
+{
+height: 55px;
+width: 55px;
+border-radius: 10px;
+}
+
+.surah-card h2
+{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.surah-card h6
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#player
+{
+    height: 15%;
+    width: 100%;
+    background-color: rgb(11, 9, 9);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#player h3
+{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(34, 47, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player h3 i
+{
+    font-size: 24px;
+}
+
+#player h3:active
+{
+  scale: .93;
+}
+
+@media screen and (max-width:780px)
+{
+    #main
+    {
+        height: max-content;
+        width: 100%;
+        flex-direction: column;
+    } 
+    #left
+{
+    height: max-content;
+    width:100%;
+    background-image: url('photo-1587617425953-9075d28b8c46.avif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+#right
+{
+    height: max-content;
+    width:100%;
+   /* border: 2px solid white; */
+   padding: 0 3vw;
+  
+}
+}
